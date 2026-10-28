@@ -1,0 +1,14 @@
+node_modules/
+.env
+*.log
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Raw extraction files (large, not needed in repo)
+nexus-extraction.md
+forge-extraction.md
+transmuter-libs-raw.md
+transmuter-batch2-raw.md

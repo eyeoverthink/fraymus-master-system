@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500" width="700" height="500">
+  <defs>
+    <marker id="cn-arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#475569"/>
+    </marker>
+    <marker id="cn-arrow-rev" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto">
+      <polygon points="8 0, 0 3, 8 6" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="700" height="500" rx="12" fill="#1a1b2e"/>
+
+  <!-- Title -->
+  <text x="350" y="32" text-anchor="middle" fill="#e2e8f0" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="1">Sovereign Motor — Compute Node Mesh</text>
+
+  <!-- ═══ Mesh Lines (behind nodes) ═══ -->
+  <!-- Base44 ↔ Windows GPU -->
+  <line x1="280" y1="120" x2="155" y2="240" stroke="#475569" stroke-width="1" stroke-dasharray="4 3" marker-start="url(#cn-arrow-rev)" marker-end="url(#cn-arrow)"/>
+  <!-- Base44 ↔ VPS -->
+  <line x1="420" y1="120" x2="545" y2="240" stroke="#475569" stroke-width="1" stroke-dasharray="4 3" marker-start="url(#cn-arrow-rev)" marker-end="url(#cn-arrow)"/>
+  <!-- Base44 ↔ GitHub -->
+  <line x1="350" y1="140" x2="350" y2="370" stroke="#475569" stroke-width="1" stroke-dasharray="4 3" marker-start="url(#cn-arrow-rev)" marker-end="url(#cn-arrow)"/>
+  <!-- Windows GPU ↔ VPS -->
+  <line x1="195" y1="265" x2="505" y2="265" stroke="#475569" stroke-width="1" stroke-dasharray="4 3" marker-start="url(#cn-arrow-rev)" marker-end="url(#cn-arrow)"/>
+  <!-- Windows GPU ↔ GitHub -->
+  <line x1="155" y1="290" x2="280" y2="390" stroke="#475569" stroke-width="1" stroke-dasharray="4 3" marker-start="url(#cn-arrow-rev)" marker-end="url(#cn-arrow)"/>
+  <!-- VPS ↔ GitHub -->
+  <line x1="545" y1="290" x2="420" y2="390" stroke="#475569" stroke-width="1" stroke-dasharray="4 3" marker-start="url(#cn-arrow-rev)" marker-end="url(#cn-arrow)"/>
+
+  <!-- ═══ Center: Motor Dispatcher ═══ -->
+  <rect x="290" y="230" width="120" height="50" rx="25" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+  <text x="350" y="252" text-anchor="middle" fill="#fbbf24" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="700">MOTOR</text>
+  <text x="350" y="268" text-anchor="middle" fill="#fbbf24" font-family="Segoe UI,Arial,sans-serif" font-size="9">Dispatcher</text>
+
+  <!-- ═══ Node: Base44 Cloud (Top) ═══ -->
+  <rect x="260" y="55" width="180" height="80" rx="12" fill="#1e1040" stroke="#a78bfa" stroke-width="2"/>
+  <circle cx="290" cy="78" r="10" fill="#a78bfa" opacity="0.3"/>
+  <text x="292" y="82" text-anchor="middle" fill="#a78bfa" font-family="Segoe UI,Arial,sans-serif" font-size="11">☁</text>
+  <text x="360" y="82" text-anchor="middle" fill="#c4b5fd" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="700">Base44 Cloud</text>
+  <text x="350" y="100" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="9">Serverless — Entity CRUD</text>
+  <text x="350" y="114" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="9">Workflows · Web UI</text>
+
+  <!-- ═══ Node: Windows GPU (Left) ═══ -->
+  <rect x="40" y="225" width="180" height="80" rx="12" fill="#1a2810" stroke="#84cc16" stroke-width="2"/>
+  <circle cx="70" cy="248" r="10" fill="#84cc16" opacity="0.3"/>
+  <text x="72" y="252" text-anchor="middle" fill="#84cc16" font-family="Segoe UI,Arial,sans-serif" font-size="11">⚡</text>
+  <text x="145" y="252" text-anchor="middle" fill="#bef264" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="700">Windows GPU</text>
+  <text x="130" y="270" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="9">Local RTX — Ollama Inference</text>
+  <text x="130" y="284" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="9">Heavy Compute</text>
+
+  <!-- ═══ Node: VPS Hostinger (Right) ═══ -->
+  <rect x="480" y="225" width="180" height="80" rx="12" fill="#1a1028" stroke="#f472b6" stroke-width="2"/>
+  <circle cx="510" cy="248" r="10" fill="#f472b6" opacity="0.3"/>
+  <text x="512" y="252" text-anchor="middle" fill="#f472b6" font-family="Segoe UI,Arial,sans-serif" font-size="11">🌐</text>
+  <text x="585" y="252" text-anchor="middle" fill="#f9a8d4" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="700">VPS Hostinger</text>
+  <text x="570" y="270" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="9">Remote — Hub Relay</text>
+  <text x="570" y="284" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="9">Model Compilation</text>
+
+  <!-- ═══ Node: GitHub (Bottom) ═══ -->
+  <rect x="260" y="375" width="180" height="80" rx="12" fill="#0f1a2e" stroke="#38bdf8" stroke-width="2"/>
+  <circle cx="290" cy="398" r="10" fill="#38bdf8" opacity="0.3"/>
+  <text x="292" y="402" text-anchor="middle" fill="#38bdf8" font-family="Segoe UI,Arial,sans-serif" font-size="11">⚙</text>
+  <text x="365" y="402" text-anchor="middle" fill="#7dd3fc" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="700">GitHub</text>
+  <text x="350" y="420" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="9">Cloud — Repository Ops</text>
+  <text x="350" y="434" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="9">CI/CD Pipelines</text>
+
+  <!-- Bottom legend -->
+  <text x="350" y="480" text-anchor="middle" fill="#64748b" font-family="Segoe UI,Arial,sans-serif" font-size="10">Motor Dispatcher routes jobs to the optimal node based on GPU/network/storage requirements</text>
+</svg>
